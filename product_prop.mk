@@ -13,8 +13,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.adb.secure=0
 endif
 
-# Media
+# Audio
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    persist.vendor.qcom.bluetooth.enable.splita2d=false \
+    vendor.audio.feature.a2dp_offload.enable=false \
     debug.stagefright.omx_default_rank.sw-audio=16
 
 # Priv-app permission
