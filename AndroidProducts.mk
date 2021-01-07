@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_raphael.mk
+    $(LOCAL_DIR)/cherish_raphael.mk
+
+COMMON_LUNCH_CHOICES := \
+    cherish_raphael-user \
+    cherish_raphael-userdebug \
+    cherish_raphael-eng
